@@ -133,7 +133,7 @@ function initialize()
 	floorMaterial.opacity = 0.3;
 	let floorMesh = new THREE.Mesh( floorGeometry, floorMaterial );
 	floorMesh.rotation.x = -Math.PI/2;
-	floorMesh.receiveShadow = true;
+	floorMesh.receiveShadow = false;
 	sceneGroup.add( floorMesh );
 	
 	ballMesh = new THREE.Mesh(
